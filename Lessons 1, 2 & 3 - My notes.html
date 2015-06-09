@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Lesson Notes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div>
+    <h1>Lesson Notes</h1>
+  </div>
+      <div class="lesson">
+        <h2>Lesson 1. The Basics of the Web and HTML</h2>
+        <div class="concept">
+            <div class="concept-title">
+              <h3>How the Web works</h3>
+            </div>
+            <div class="concept-description">
+              <p>The web is a number of computers that communicate with each other. Computers send HTTP Requests to a sever. The server then finds the appropriate HTML documents and sends it back to the the computer that asked for it. A web browser interprets the page and displays it accordingly.</p>
+
+              <p>As such, the World Wide Web is a collection of HTML documents. This is the basis for almost every webpage. Hyperlinks are what makes the makes the web "web like".</p>
+
+              <p>Anything can exist on the web, from plain text, html, music, images, videos, etc.</p>
+            </div>
+        </div>
+        <div class="concept">
+        <div class="concept-title">
+            <h3>HTML</h3>
+        </div>
+        <div class="concept-description">
+                <p>HTML stands for Hypertext Markup Language. It is basically the heart of the web, as the majority of the content on the web are in HTML form.</p>
+                <p>HTML is made up of text content (what you see), markup (what it looks like) and references to other documents, such as images, videos, links to other pages.
+                </p>
+                <p>In HTML plain text is plain text. HTML Markup is made up of things called tags. For example&#58;
+
+                  <ul>
+                    <li>&lt;b&gt;anything&lt;&sol;b&gt; &equals;&equals; bold</li>
+                    <li>&lt;em&gt;anything&lt;&sol;em&gt; &equals;&equals; italics</li>
+                  </ul>
+                <p>If you don't use a closing tag after the opening tag, everything after the tag will be considered part of it.</p>
+        </div>
+        </div>
+        <div class="concept">
+        <div class="concept-title">
+            <h3>HTML Attributes</h3>
+        </div>
+        <div class="concept-description">
+              <h4>Composition&#58;</h4>
+                <ul>
+                   <li>&lt;tag attr="value"&gt;contents&lt;&sol;tag&gt; </li>
+                </ul>
+              <h4>Examples of tags that use an attribute&#58;</h4>
+                <h5> <em>Anchor tag</em> - &lt;a&gt; </h5>
+                  <ul>
+                     <li>&lt;a href="www.reddit.com"&gt;Reddit&lt;&sol;a&gt; </li>
+                  </ul>
+                <h5> <em>Image tag</em> - &lt;img&gt;</h5>
+                  <ul>
+                     <li>&lt;img src="url" alt="text"&gt; &#45;&#45;&#45;&gt; src &equals; source </li>
+                     <li>&lt; img src="" alt=""&gt; &#45;&#45;&#45;&gt; void tag &equals; closes without tag because there is no content</li>
+                  </ul>
+              <h4>Whitespace&#58;</h4>
+                <p>
+              To force space you need to use the void tag &lt;br&gt; &equals; break &equals; line breaks.You put it after the word you want the line to break at. If not html puts everything in one line. Can also use the &lt;p&gt; tag. Is not a void tag, because it has content.
+                </p>
+              <h4>Content can be either inline or block</h4>
+                <ul>
+                  <li>"br" &#45; inline</li>
+                  <li>"p" &#45; block &#45; makes an invisible block (can actually have height and width)</li>
+                </ul>
+              <h4>Container elements&#58;</h4> Elements that do nothing but contain stuff inside of them
+                <ul>
+                  <li>&lt;span&gt;text&lt;&sol;span&gt; ---&gt; inline </li>
+                  <li>&lt;div&gt;text&lt;&sol;div&gt; ---&gt; block </li>
+                </ul>
+              <p><b>with CSS&#58;</b></p>
+                  <ul>
+                    <li>&lt;span class="foo"&gt;text&lt;&sol;span&gt; </li>
+                    <li>&lt;div class="bar"&gt;text&lt;&sol;div&gt; </li>
+                  </ul>
+                  <ul>
+                    <li>Inline Elements so far &equals; a, span, br, img, strong</li>
+                    <li>Block Elements so far &equals; div, p, form</li>
+                  </ul>
+        </div>
+        </div>
+        <div class="concept">
+        <div class="concept-title">
+            <h3>Structure of HTML document</h3>
+        </div>
+        <div class="concept-description">
+                <ul>
+                  <li>&lt;&excl;DOCTYPE HTML&gt;          &#45; doctype </li>
+                  <li>&lt; html&gt; </li>
+                  <li>&lt; head&gt;                   - meta&#45;data (javascript, css) </li>
+                  <li>&lt;title&gt;Title!&lt;&sol;title&gt; </li>
+                  <li>&lt;&sol;head&gt; </li>
+                  <li>&lt;body&gt;                   - body &#45; contents </li>
+                  <li>&lt;b&gt;Content&lt;&sol;b&gt; </li>
+                  <li>&lt;&sol;body&gt; </li>
+                  <li>&lt;&sol;html&gt; </li>
+                </ul>
+        </div>
+        </div>
+      </div>
+
+      <div class="lesson">
+            <h2>Lesson 2. Creating a Structured Document with HTML</h2>
+            <div class="concept">
+              <div class="concept-title">
+                <h3>Developer Tools in the Browser</h3>
+              </div>
+              <div class="concept-description">
+                  <p>
+                    HTML elements are either <b>inline</b> or <b>block</b>.
+                    Block elements form an "invisible box" around the
+                    content inside of them.
+                  </p>
+              </div>
+              <div class="concept-title">
+                <h3>The "tree like" structure of HTML</h3>
+              </div>
+              <div class="concept-description">
+                  <p>
+                    The "tree like" structure comes from the fact that HTML
+                    elements can have other elements inside of them. You can
+                    draw this relationship like a family tree.
+                    In a browser, this structure shows up as a series of
+                    nested boxes. There are boxes inside of boxes inside of
+                    boxes.
+                  </p>
+               </div>
+              <div class="concept-title">
+                <h3>The relationship between indented HTML and boxes</h3>
+              </div>
+              <div class="concept-description">
+                  <p>
+                    When you read an HTML document as <em>text</em>,
+                    you see a wave of changing indentations going up and down the left side of the document.
+                    The more indented an element is, the more deeply nested it's corresponding "box" is.
+                  </p>
+                </div>
+              <div class="concept-title">
+                <h3>Text Editors for Programming</h3>
+              </div>
+              <div class="concept-description">
+                  <p>
+                    When writing code, programmers use special text editors.
+                    These editors make the programmer's life easier.
+                    For example, some text editors will automatically generate a closing HTML tag
+                    when you write an opening tag.
+                  </p>
+              </div>
+            </div>
+          </div>
+              <div class="lesson">
+                <h2>Lesson 3. Adding CSS Style to HTML Structure</h2>
+          <div class="concept">
+          <div class="concept-title">
+              <h3>CSS</h3>
+          </div>
+          <div class="concept-description">
+              <p>
+                CSS (Cascading Style Sheets) give programmers the ability to control the style of HTML elements by giving similar HTML elements the same class name and then specifying the style that should apply to all that class.
+              </p>
+          </div>
+          </div>
+                    <div class="concept">
+          <div class="concept-title">
+              <h3>Avoiding Repetition</h3>
+          </div>
+          <div class="concept-description">
+              <p> There are several reasons for which programmers should avoid repetition. First, it helps them to <b>avoid errors</b>. While constantly copy and pasting code, or rewriting the same code with minor differences many times, the chances of committing errors increase. This is why they should diligently make the changes everywhere the repeated code appears.
+              </p>
+              <p> Second, is aiming for <b>consistency</b>. By writing easy to reproduce code and streamlining several style rules, the programmer can easily alter any of the pieces and affect the whole documents instead of having to go line after line looking for where to effect changes or not.
+              </p>
+          </div>
+          </div>
+          </div>
+  </body>
+</html>
